@@ -1,0 +1,4 @@
+- weather
+- time
+- mails today
+- screensavers
