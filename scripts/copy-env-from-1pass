@@ -1,2 +1,3 @@
 oplogin
-op get item "home-dashboard openweathermap api key" | jq '.details.notesPlain'
+cp .env.tmpl .env
+perl -pi -e 's/(.*)=\$1p"(.*)"/$1 . "=" . `op get item "$2" | jq -r '.details.notesPlain'`/ge' ./.env
