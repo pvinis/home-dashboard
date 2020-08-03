@@ -1,0 +1,2 @@
+oplogin
+op get item "home-dashboard openweathermap api key" | jq '.details.notesPlain'
